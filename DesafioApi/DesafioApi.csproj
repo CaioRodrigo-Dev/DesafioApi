@@ -24,10 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\DesafioApiInfra\DesafioApiInfra.csproj" />
     <ProjectReference Include="..\DesafioApiService\DesafioApiService.csproj" />
   </ItemGroup>

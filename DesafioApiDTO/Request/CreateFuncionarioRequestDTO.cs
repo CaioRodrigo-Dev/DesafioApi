@@ -5,13 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesafioApiDomain.Funcionario
+namespace DesafioApiDTO.Request
 {
-    public class FuncionarioDomain
+    public class CreateFuncionarioRequestDTO
     {
-        [Key]
-        public int Id { get; set; }
-
         [Required]
         public string Nome { get; set; }
 
@@ -23,7 +20,10 @@ namespace DesafioApiDomain.Funcionario
         public string Email { get; set; }
 
         [Required]
-        public string Documento { get; set; } 
+        public string Cpf { get; set; }
+
+        [Required]
+        public int Idade { get; set; }
 
         public List<string> Telefones { get; set; }
 
@@ -32,6 +32,4 @@ namespace DesafioApiDomain.Funcionario
         [Required]
         public string Senha { get; set; }
     }
-
 }
-

@@ -25,6 +25,7 @@
   <ItemGroup>
     <ProjectReference Include="..\DesafioApiDomain\DesafioApiDomain.csproj" />
     <ProjectReference Include="..\DesafioApiDTO\DesafioApiDTO.csproj" />
+    <ProjectReference Include="..\DesafioApiInfra\DesafioApiInfra.csproj" />
   </ItemGroup>
 
 </Project>

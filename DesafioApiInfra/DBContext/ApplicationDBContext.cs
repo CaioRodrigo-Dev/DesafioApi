@@ -1,4 +1,4 @@
-﻿using DesafioApiDomain.Funcionario;
+﻿using DesafioApiDomain.Entities.Funcionario;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace DesafioApiInfra.DBContext
 {
-    public class ApplicationDBContext : DbContext
+    public class ApplicationDbContext : DbContext
     {
         #region Constructor
-        public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
            : base(options)
         {
         }
