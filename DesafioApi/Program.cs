@@ -6,6 +6,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using DesafioApiInfra.Repository.Interfaces;
+using DesafioApiInfra.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -48,6 +50,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Adiciona o serviço de Funcionario
+builder.Services.AddScoped<IFuncionarioRepository, FuncionarioRepository>();
 builder.Services.AddScoped<FuncionarioService>();
 
 var app = builder.Build();
